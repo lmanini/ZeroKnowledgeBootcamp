@@ -3,7 +3,6 @@
 1. Group / field theory 
 <br>
 Take the set of bits B = {0, 1} and the operation ⊕ :
-<br>
     
         0 ⊕ 0 = 0
         0 ⊕ 1 = 1

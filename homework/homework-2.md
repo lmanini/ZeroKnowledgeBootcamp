@@ -1,6 +1,7 @@
 # Homework 2
 
-1. Group / field theory 
+1. Group / field theory
+
 Take the set of bits B = {0, 1} and the operation ⊕ :
     
         0 ⊕ 0 = 0

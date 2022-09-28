@@ -10,27 +10,27 @@ func test_patternt{syscall_ptr: felt*, range_check_ptr, bitwise_ptr: BitwiseBuil
 
    // test nice numbers
     //###############################################################################################
-    let (nice_pattern) = pattern(n=170, idx=0, exp=0, broken_chain=0);
+    let (nice_pattern) = pattern(n=170, idx=0, exp=0, broken_chain=0); // 10101010
     assert nice_pattern = 1;
 
-    let (nice_pattern) = pattern(n=10, idx=0, exp=0, broken_chain=0);
+    let (nice_pattern) = pattern(n=10, idx=0, exp=0, broken_chain=0); // 1010
     assert nice_pattern = 1;
 
-    let (nice_pattern) = pattern(n=43690, idx=0, exp=0, broken_chain=0);
+    let (nice_pattern) = pattern(n=43690, idx=0, exp=0, broken_chain=0); // 1010101010101010
     assert nice_pattern = 1;
 
-    let (nice_pattern) = pattern(n=1398101, idx=0, exp=0, broken_chain=0);
+    let (nice_pattern) = pattern(n=1398101, idx=0, exp=0, broken_chain=0); // 101010101010101010101
     assert nice_pattern = 1;
 
    // test not-nice numbers
     //###############################################################################################
-    let (nice_pattern) = pattern(n=17, idx=0, exp=0, broken_chain=0);
+    let (nice_pattern) = pattern(n=17, idx=0, exp=0, broken_chain=0); // 10001
     assert nice_pattern = 0;
 
-    let (nice_pattern) = pattern(n=11, idx=0, exp=0, broken_chain=0);
+    let (nice_pattern) = pattern(n=11, idx=0, exp=0, broken_chain=0); // 1011
     assert nice_pattern = 0;
 
-    let (nice_pattern) = pattern(n=43390, idx=0, exp=0, broken_chain=0);
+    let (nice_pattern) = pattern(n=43390, idx=0, exp=0, broken_chain=0); // 1010100101111110
     assert nice_pattern = 0;
 
     %{

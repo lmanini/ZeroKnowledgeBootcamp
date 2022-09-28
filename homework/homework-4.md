@@ -21,7 +21,4 @@ It looks to me that output_ptr is incremented once every time some new element i
 
 2. Done
 
-3. Excercise solutions
-
-    1.  
-    2.
+3. Excercise solutions: find them under `/starknet/exercises/cairo`

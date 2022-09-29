@@ -8,3 +8,7 @@ libs_path = "exercises"
 main = [
     "exercises/main.cairo",    
 ]
+basic = [
+    "exercises/contracts/basic/basic.cairo",
+]
+

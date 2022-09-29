@@ -4,7 +4,7 @@
 2. Does this example use tail recursion?
 3. Install the Argent X and Braavos wallet and create an account : how does this account differ to an Ethereum EOA?
 
-# Solutions
+## Solutions
 
 1. It does.
 2. It doesn't as the recursive call isn't the last thing the function does.

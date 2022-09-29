@@ -1,4 +1,4 @@
-# Homework 1
+# Homework 7
 
 1. Install Warp and try transpiling a solidity contract
 2. For the basic contract you completed in the exercises, try deploying this to the alpha-goerli test net.

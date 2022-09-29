@@ -24,7 +24,7 @@ Does the set B and the operation ⊕ satisfy the group properties?
 
 5. Which of the above is best when describing proof size
 
-# Solutions
+## Solutions
 
 1. They do, as the operation is commutative and associative, the neutral element is 0 and {0 , 1} are their own inverse element
 

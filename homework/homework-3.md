@@ -9,7 +9,7 @@ Use remix, install the Zokrates plugin
 3. Follow the example to build a proof that you know the pre image of a hash [example link](https://zokrates.github.io/examples/sha256example.html).
 4. In principle how could you use Zokrates to verify that a certain address on Ethereum has more than 1 ETH?
 
-# Solutions
+## Solutions
 
 1. 
     ``` 

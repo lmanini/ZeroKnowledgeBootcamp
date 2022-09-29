@@ -11,7 +11,7 @@
 2. For S defined as above, can we consider S and the operation '+' to be a group?
 3. What is -13 mod 5?
 
-# Solutions
+## Solutions
 🚨 Solutions are provided assuming that the + and x operations are defined modulo 7🚨
 
 1.   

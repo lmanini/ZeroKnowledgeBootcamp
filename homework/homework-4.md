@@ -7,7 +7,7 @@
 2. Install Protostar
 3. Complete exercises 1 to 7 in the current repo (/excercises/).
 
-# Solutions
+## Solutions
 
 1.  
 

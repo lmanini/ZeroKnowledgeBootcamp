@@ -15,7 +15,6 @@ func pattern{bitwise_ptr: BitwiseBuiltin*, range_check_ptr}(
     n: felt, idx: felt, exp: felt, broken_chain: felt
 ) -> (true: felt) {
     alloc_locals;
-
     let (local lsb) = bitwise_and(n, 1); //make lsb local to avoid it being revoked
 
     if (idx == 0) {
@@ -31,7 +30,7 @@ func pattern{bitwise_ptr: BitwiseBuiltin*, range_check_ptr}(
         let (new_exp) = bitwise_xor(lsb, 1); // flip current lsb to get next expected value
         return pattern(
             (n - lsb) / 2, // always have 0 as lsb so that the div doesnt explode
-            idx + 1,
+            idx + 1, // may be reduced to just 1, increment is useless
             new_exp,
             0
         );

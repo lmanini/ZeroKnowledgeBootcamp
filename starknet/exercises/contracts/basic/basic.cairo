@@ -31,22 +31,17 @@ func sales(buyer : felt, seller : felt, transaction : felt) -> (sale_details : S
 func submit_sale{pedersen_ptr : HashBuiltin*, syscall_ptr : felt*, range_check_ptr}(price : felt, item_index : felt, discount_applied : felt, buyer : felt, seller : felt, transaction : felt){
 
     // Variables must be instantiated with either let/tempvar/local
-    sale = Sale_Details(price, item_index, discount_applied);
+    let sale = Sale_Details(price, item_index, discount_applied);
 
     // Write sale date
     sales.write(buyer, seller, transaction, sale);
 
     // Get transaction counter
-    let tc = total_customers.read();
+    let (tc) = total_customers.read();
 
     // Increment transaction counter
-    total_customers.write(tc);
+    total_customers.write(tc + 1);
 
     // Functions must always return something    
+    return ();
 }
-
-
-
-
-
-

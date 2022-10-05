@@ -13,8 +13,7 @@ func test_sum_even{syscall_ptr: felt*, range_check_ptr, bitwise_ptr: BitwiseBuil
     assert array[0] = 2;
     assert array[1] = 1;
     let (sum) = sum_even(2, array, 0, 0);
-    // assert sum = 2;
-    %{ print(f"sum: {ids.sum}") %}
+    assert  2 = sum;
 
     let (local array: felt*) = alloc();
     assert array[0] = 2;
@@ -29,8 +28,7 @@ func test_sum_even{syscall_ptr: felt*, range_check_ptr, bitwise_ptr: BitwiseBuil
     assert array[9] = 5;
 
     let (sum) = sum_even(10, array, 0, 0);
-    // assert sum = 1468;
-    %{ print(f"sum: {ids.sum}") %}
+    assert 1468 = sum;
 
     return ();
 }
